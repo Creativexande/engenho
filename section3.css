@@ -1,0 +1,76 @@
+.sessao3 {
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    width: 100%;
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+    justify-content: center;
+}
+
+.upservices {
+    background-color: transparent;
+    flex-grow: 1; /* Ocupa todo o espaço vertical disponível */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos {
+    background-color: #2F2F2F;
+    margin: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    border-right-style: solid;
+    border-width: 0.3vh;
+    border-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.infos img {
+    margin-bottom: 3vh;
+}
+
+.infos h1 {
+    margin-bottom: 3vh;
+    color: aliceblue;
+}
+
+.infos a {
+    color: aliceblue;
+    padding: 5px 17px;
+    background-color: #2F2F2F;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.infos a:hover {
+    background-color: #ffd700; /* Amarelo dourado */
+    color: #000; /* Preto */
+}
+
+#banner1 {
+    background-image: url('https://blog.essenciamoveis.com.br/wp-content/uploads/2021/10/unorp.br-educacao-fisica-ft-curso-engenharia-civil.jpg');
+    background-size: cover;
+    
+}
+
+
+
+#banner2 {
+    background-image: url('https://storage.googleapis.com/novo-blog-wordpress/2023/07/853ab090-capa-blog_projeto-orientacao-profissional_engenharia-civil.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 300px; /* Defina a altura desejada ou ajuste conforme necessário */
+    margin-bottom: 20px; /* Adicionado espaço entre os banners */
+}
+
+
+
+

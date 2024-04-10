@@ -1,0 +1,190 @@
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Adicione seus estilos para o corpo aqui */
+}
+
+header {
+    background-color: #252525; /* Altere para a cor desejada */   
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto; /* Centraliza o header-container */
+    padding: 0 20px; /* Adiciona algum espaçamento interno, ajuste conforme necessário */
+    padding-block: 20px;
+    height: 15vh;
+    
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    
+}
+
+nav li {
+    margin-right: 25px;
+    display: flex;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Defina a cor desejada */
+    font-size: 17px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100%;
+   
+}
+
+.orcamento-button {
+    background: linear-gradient(to right, #a3a3a3, #f0f0f0); /* Gradiente prateado */
+    color: #333; /* Cor do texto */
+    padding: 10px 30px; /* Espaçamento interno */
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transição suave de cor ao passar o mouse */
+    text-decoration: none;
+   
+}
+
+.orcamento-button:hover {
+    background: linear-gradient(to right, #f0f0f0, #d9d9d9); /* Invertendo a gradiente no hover */
+}
+
+/* Adicione estilos para o ícone de hambúrguer em dispositivos móveis */
+.menu-icon {
+    display: none; /* Inicialmente oculto em dispositivos desktop */
+    font-size: 30px;
+    color: #d9d9d9;
+    cursor: pointer;
+}
+
+.close-icon {
+    color: transparent;
+}
+
+@media only screen and (max-width: 1024px) {
+
+.header-container ul li a {
+   font-size: 16px;
+   
+}
+
+    }
+
+
+/* Estilos específicos para dispositivos móveis usando a regra de mídia */
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Exibe o ícone de hambúrguer em dispositivos móveis */
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: fixed;
+        top: 0; /* Fixa ao topo sem margem superior */
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Cobrindo a altura total da viewport */
+        align-items: center; /* Centraliza os itens verticalmente */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        padding-top: 60px; /* Espaçamento superior para evitar sobreposição */
+        z-index: 10;
+    }
+
+    .navbar ul {
+        list-style: none;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-right: 0;
+        margin-bottom: 95px;
+        
+        
+    }
+
+    .navbar ul a {
+        font-size: 20px;
+        
+    }
+
+    .navbar li {
+        margin: 10px 0;
+        
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+    }
+
+/* Adicione estilos para o botão de fechar dentro da regra @media */
+.close-icon {
+    font-size: 25px;
+    color: #d9d9d9;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 20px; /* Ajuste a posição conforme necessário */
+    right: 20px; /* Ajuste a posição conforme necessário */
+    transition: color 0.3s ease; /* Adiciona uma transição de cor suave */
+
+    /* Adiciona um pouco de espaçamento e contorno */
+    padding: 2px;
+    border: 2px solid #d9d9d9;
+    border-radius: 1%;
+}
+
+.close-icon:hover {
+    color: #fff; /* Altera a cor ao passar o mouse */
+}
+
+.logo img {
+    width: 12vh ;
+    
+}
+
+}
+
+@media only screen and (max-width: 375px) {
+    .logo img {
+        max-width: 100px;
+    }
+    .orcamento-button {
+        padding: 6px 20px; /* Espaçamento interno */
+        margin-left: 20px;
+    } 
+    .navbar.active { z-index: 10;
+    
+}
+
+}

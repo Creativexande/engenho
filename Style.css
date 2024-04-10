@@ -1,0 +1,13 @@
+@import url(header.css);
+@import url(section01.css);
+@import url(section02.css);
+@import url(section3.css);
+@import url(Footer.css);
+@import url(portifolio.css);
+@import url(feedback.css);
+*{
+    box-sizing: border-box;
+    
+    
+}
+

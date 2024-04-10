@@ -1,0 +1,113 @@
+.sua-jornada {
+    background-image: url("imgs/BACKGROUND.webp");
+    background-size: cover;
+    transform: scaleY(1.02);
+
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1640px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.info {
+    color: #ffffff;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.info h1 {
+    max-width: 570px;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 300;
+    
+}
+
+.info p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 500px;
+   
+}
+
+.button-orc {
+   
+    color: #2f2e2e;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+    width: 646px;
+    height: 66px;
+    background: linear-gradient(270deg, #BC9E00, #DBB800 10%, #E9C300 20%, #FFDC24 30%, rgba(255, 219.63, 94.21, 0.91) 40%, rgba(255, 243.08, 200.81, 0.91) 50%, rgba(255, 219.63, 94.21, 0.91) 60%, #FFDD2D 70%, #EDCA10 80%, #DBBA0D 90%, #BC9E00);
+    border-radius: 50px;
+    margin-top: 20px;
+    max-width: 570px;
+    font-weight: 500;
+    
+   
+}
+
+.button-orc:hover {
+    background: linear-gradient(270deg, #ffd700, #FFDD2D 70%, #EDCA10 80%, #DBBA0D 90%, #BC9E00); /* Cor dourada no hover */
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 20px; /* Adiciona espaçamento opcional nas laterais em telas de celular */
+    }
+   
+    .button-orc {
+
+        max-width: 335px;
+    }
+
+    
+    }
+
+    .info h1 {
+        max-width: 200vw;
+        font-size: 32px;
+
+    
+
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 0 20px; /* Adiciona espaçamento opcional nas laterais em telas de celular */
+      
+        
+    }
+    
+   
+    .button-orc {
+
+        max-width: 80vw;
+        max-height: 7vh;
+       margin: 0;
+       padding: 0;
+       font-size: 1em;
+    }
+
+    .info h1 {
+        max-width: 200vw;
+        font-size: 7vw;
+
+    
+
+}
+
+.info p {
+    max-width: 300vw;
+    font-size: 4vw;
+
+
+}
+}
+

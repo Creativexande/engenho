@@ -1,0 +1,52 @@
+.sessao2 {
+    background-image: url("imgs/BACKGORUND\ 2.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh; /* Use min-height para garantir que a altura seja pelo menos 100vh */
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: black;
+    overflow: hidden; /* Adicionado para esconder qualquer conteúdo que ultrapasse a altura */
+}
+
+#sobrenos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.sobre {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    max-width: 100%; /* Adicionado para garantir que o conteúdo não ultrapasse a largura da tela */
+    height: 100%; /* Definido para ocupar 100% da altura da tela */
+    box-sizing: border-box; /* Adicionado para incluir padding na altura e largura */
+}
+
+.sobre h1 {
+    color: aliceblue;
+    margin-bottom: 5vh;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.sobre p {
+    margin: 0 auto;
+    color: aliceblue;
+    max-width: 120vw;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.sobre p span {
+    color: rgb(255, 200, 0);
+}
